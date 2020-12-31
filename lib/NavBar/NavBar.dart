@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/carousel/ImageSlider.dart';
 
 class NavBar extends StatefulWidget {
   @override
@@ -11,7 +10,6 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer
       endDrawer: (MediaQuery.of(context).size.width <= 700.0)
           ? Drawer(
               child: ListView(
@@ -387,27 +385,6 @@ class _NavBarState extends State<NavBar> {
                   ]
                 : []),
       ),
-      body: LayoutBuilder(builder: (context, constraints) {
-        return SingleChildScrollView(
-          child: ConstrainedBox(
-            constraints: BoxConstraints(
-                minWidth: constraints.maxWidth,
-                minHeight: constraints.maxHeight),
-            child: IntrinsicHeight(
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  ImageSlider(), //image slider
-                  Text("how it works"), // 3 row features
-                  Text("Products"), // 3  row products
-                  Text("Faq"), // 5 qa
-                  Text("Contact"), //bottom
-                ],
-              ),
-            ),
-          ),
-        );
-      }),
     );
   }
 }

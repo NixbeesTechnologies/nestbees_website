@@ -181,210 +181,207 @@ class _NavBarState extends State<NavBar> {
               ),
             )
           : null,
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60.0),
-        child: AppBar(
-            iconTheme: IconThemeData(
-              color: Color(0xff581845),
-            ),
-            title: Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: Text(
-                "Nestbees",
-                style: TextStyle(
-                  fontFamily: "Ubantu",
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xff581845),
-                  fontSize: 35.0,
-                ),
+      appBar: AppBar(
+          iconTheme: IconThemeData(
+            color: Color(0xff581845),
+          ),
+          title: Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Text(
+              "Nestbees",
+              style: TextStyle(
+                fontFamily: "Ubantu",
+                fontWeight: FontWeight.bold,
+                color: Color(0xff581845),
+                fontSize: 35.0,
               ),
             ),
-            leading: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 6.0),
-              child: Image.asset(
-                "images/logo.jpeg",
-                width: 7.0,
-                height: 7.0,
-              ),
+          ),
+          leading: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6.0),
+            child: Image.asset(
+              "images/logo.jpeg",
+              width: 7.0,
+              height: 7.0,
             ),
-            backgroundColor: Colors.white,
-            //other navitems
-            toolbarHeight: 50.0,
-            actions: (MediaQuery.of(context).size.width > 700)
-                ? [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: FlatButton(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Home",
-                              style: TextStyle(
-                                color: Color(0xff581840),
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
+          ),
+          backgroundColor: Colors.white,
+          //other navitems
+          toolbarHeight: 50.0,
+          actions: (MediaQuery.of(context).size.width > 700)
+              ? [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: FlatButton(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Home",
+                            style: TextStyle(
+                              color: Color(0xff581840),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Nunito",
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Container(
-                                height: 1.5,
-                                width: 70.0,
-                                color: _index == 0
-                                    ? Color(0xff581840)
-                                    : Colors.transparent, //onclick highlighting
-                              ),
-                            )
-                          ],
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _index = 0;
-                          });
-                        },
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: FlatButton(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Products",
-                              style: TextStyle(
-                                color: Color(0xff581840),
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Container(
+                              height: 1.5,
+                              width: 70.0,
+                              color: _index == 0
+                                  ? Color(0xff581840)
+                                  : Colors.transparent, //onclick highlighting
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Container(
-                                height: 1.5,
-                                width: 80.0,
-                                color: _index == 1
-                                    ? Color(0xff581840)
-                                    : Colors.transparent, //onclick highlighting
-                              ),
-                            )
-                          ],
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _index = 1;
-                          });
-                        },
+                          )
+                        ],
                       ),
+                      onPressed: () {
+                        setState(() {
+                          _index = 0;
+                        });
+                      },
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: FlatButton(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Query",
-                              style: TextStyle(
-                                color: Color(0xff581840),
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: FlatButton(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Products",
+                            style: TextStyle(
+                              color: Color(0xff581840),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Nunito",
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Container(
-                                height: 1.5,
-                                width: 70.0,
-                                color: _index == 2
-                                    ? Color(0xff581840)
-                                    : Colors.transparent, //onclick highlighting
-                              ),
-                            )
-                          ],
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _index = 2;
-                          });
-                        },
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: FlatButton(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "FAQ",
-                              style: TextStyle(
-                                color: Color(0xff581840),
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Container(
+                              height: 1.5,
+                              width: 80.0,
+                              color: _index == 1
+                                  ? Color(0xff581840)
+                                  : Colors.transparent, //onclick highlighting
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Container(
-                                height: 1.5,
-                                width: 60.0,
-                                color: _index == 3
-                                    ? Color(0xff581840)
-                                    : Colors.transparent, //onclick highlighting
-                              ),
-                            )
-                          ],
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _index = 3;
-                          });
-                        },
+                          )
+                        ],
                       ),
+                      onPressed: () {
+                        setState(() {
+                          _index = 1;
+                        });
+                      },
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: FlatButton(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Contact",
-                              style: TextStyle(
-                                color: Color(0xff581840),
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: FlatButton(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Query",
+                            style: TextStyle(
+                              color: Color(0xff581840),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Nunito",
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Container(
-                                height: 1.5,
-                                width: 70.0,
-                                color: _index == 4
-                                    ? Color(0xff581840)
-                                    : Colors.transparent, //onclick highlighting
-                              ),
-                            )
-                          ],
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            _index = 4;
-                          });
-                        },
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Container(
+                              height: 1.5,
+                              width: 70.0,
+                              color: _index == 2
+                                  ? Color(0xff581840)
+                                  : Colors.transparent, //onclick highlighting
+                            ),
+                          )
+                        ],
                       ),
+                      onPressed: () {
+                        setState(() {
+                          _index = 2;
+                        });
+                      },
                     ),
-                  ]
-                : []),
-      ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: FlatButton(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "FAQ",
+                            style: TextStyle(
+                              color: Color(0xff581840),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Nunito",
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Container(
+                              height: 1.5,
+                              width: 60.0,
+                              color: _index == 3
+                                  ? Color(0xff581840)
+                                  : Colors.transparent, //onclick highlighting
+                            ),
+                          )
+                        ],
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _index = 3;
+                        });
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: FlatButton(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Contact",
+                            style: TextStyle(
+                              color: Color(0xff581840),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Nunito",
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Container(
+                              height: 1.5,
+                              width: 70.0,
+                              color: _index == 4
+                                  ? Color(0xff581840)
+                                  : Colors.transparent, //onclick highlighting
+                            ),
+                          )
+                        ],
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _index = 4;
+                        });
+                      },
+                    ),
+                  ),
+                ]
+              : []),
     );
   }
 }

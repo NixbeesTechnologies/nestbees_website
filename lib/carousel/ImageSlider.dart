@@ -1,11 +1,13 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterwebapp/design/colors.dart';
+import 'package:flutterwebapp/design/fontsize.dart';
 
 class ImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Colors.blueGrey),
+      decoration: BoxDecoration(color: Mycolors.imgbg),
       child: ListView(
         children: [
           SizedBox(
@@ -36,11 +38,11 @@ class ImageSlider extends StatelessWidget {
                           "Switch to \nSmart Switch",
                           style: TextStyle(
                               fontSize: MediaQuery.of(context).size.width > 700
-                                  ? 80.0
-                                  : 35.0,
-                              fontFamily: "Nunito",
+                                  ? MyFont.imgtext
+                                  : MyFont.h1,
+                              fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                              color: Mycolors.white),
                         ),
                       )
                     ],
@@ -60,11 +62,11 @@ class ImageSlider extends StatelessWidget {
                           "Easy to use\nMobile App",
                           style: TextStyle(
                               fontSize: MediaQuery.of(context).size.width > 700
-                                  ? 80.0
-                                  : 35.0,
-                              fontFamily: "Nunito",
+                                  ? MyFont.imgtext
+                                  : MyFont.h1,
+                              fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey[900]),
+                              color: Mycolors.t2),
                         ),
                       )
                     ],
@@ -84,11 +86,11 @@ class ImageSlider extends StatelessWidget {
                           "Works\nGlobally and Locally",
                           style: TextStyle(
                               fontSize: MediaQuery.of(context).size.width > 700
-                                  ? 80.0
-                                  : 35.0,
-                              fontFamily: "Nunito",
+                                  ? MyFont.imgtext
+                                  : MyFont.h1,
+                              fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                              color: Mycolors.white),
                         ),
                       )
                     ],
@@ -108,11 +110,11 @@ class ImageSlider extends StatelessWidget {
                           "Multiple user \nAccess",
                           style: TextStyle(
                               fontSize: MediaQuery.of(context).size.width > 700
-                                  ? 80.0
-                                  : 35.0,
-                              fontFamily: "Nunito",
+                                  ? MyFont.imgtext
+                                  : MyFont.h1,
+                              fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey[900]),
+                              color: Mycolors.t2),
                         ),
                       )
                     ],

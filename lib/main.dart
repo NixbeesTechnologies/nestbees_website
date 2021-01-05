@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/Products/Products.dart';
+import 'package:flutterwebapp/Products/products.dart';
 import 'package:flutterwebapp/carousel/ImageSlider.dart';
+import 'package:flutterwebapp/contact/contact.dart';
 import 'package:flutterwebapp/design/colors.dart';
 import 'package:flutterwebapp/design/fontsize.dart';
-import 'NavBar/NavBar.dart';
+import 'package:flutterwebapp/faq/faq.dart';
+import 'NavBar/nav_bar.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -24,35 +26,35 @@ class _LandingPageState extends State<LandingPage> {
   AppBar buildAppBar() {
     return AppBar(
         iconTheme: IconThemeData(
-          color: Mycolors.nav,
+          color: Mycolors.white,
         ),
         title: Padding(
-          padding: const EdgeInsets.only(top: 8.0),
+          padding: const EdgeInsets.only(top: 10.0),
           child: Text(
             "Nestbees",
             style: TextStyle(
               fontFamily: "Ubantu",
               fontWeight: FontWeight.bold,
-              color: Mycolors.nav,
+              color: Mycolors.primarytitle,
               fontSize: MyFont.h2,
             ),
           ),
         ),
         leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 6.0),
+          padding: const EdgeInsets.only(left: 10.0),
           child: Image.asset(
             "images/logo.jpeg",
             width: 7.0,
             height: 7.0,
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Mycolors.primary,
         //other navitems
-        toolbarHeight: 50.0,
+        toolbarHeight: 70.0,
         actions: (MediaQuery.of(context).size.width > 700)
             ? [
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
                   child: FlatButton(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -60,9 +62,10 @@ class _LandingPageState extends State<LandingPage> {
                         Text(
                           "Home",
                           style: TextStyle(
-                            color: Mycolors.navitem,
+                            color: _navbarindex == 0
+                                ? Mycolors.primarytitle
+                                : Mycolors.dwhite,
                             fontSize: MyFont.h3,
-                            fontWeight: FontWeight.bold,
                             fontFamily: "Nunito",
                           ),
                         ),
@@ -72,7 +75,7 @@ class _LandingPageState extends State<LandingPage> {
                             height: 1.5,
                             width: 70.0,
                             color: _navbarindex == 0
-                                ? Color(0xff581840)
+                                ? Mycolors.primarytitle
                                 : Colors.transparent, //onclick highlighting
                           ),
                         )
@@ -86,7 +89,8 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding:
+                      const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
                   child: FlatButton(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -94,9 +98,10 @@ class _LandingPageState extends State<LandingPage> {
                         Text(
                           "Products",
                           style: TextStyle(
-                            color: Color(0xff581840),
+                            color: _navbarindex == 1
+                                ? Mycolors.primarytitle
+                                : Mycolors.dwhite,
                             fontSize: MyFont.h3,
-                            fontWeight: FontWeight.bold,
                             fontFamily: "Nunito",
                           ),
                         ),
@@ -104,9 +109,9 @@ class _LandingPageState extends State<LandingPage> {
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Container(
                             height: 1.5,
-                            width: 80.0,
+                            width: 70.0,
                             color: _navbarindex == 1
-                                ? Mycolors.navitem
+                                ? Mycolors.primarytitle
                                 : Colors.transparent, //onclick highlighting
                           ),
                         )
@@ -120,7 +125,8 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding:
+                      const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
                   child: FlatButton(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -128,9 +134,10 @@ class _LandingPageState extends State<LandingPage> {
                         Text(
                           "FAQ",
                           style: TextStyle(
-                            color: Mycolors.navitem,
+                            color: _navbarindex == 2
+                                ? Mycolors.primarytitle
+                                : Mycolors.dwhite,
                             fontSize: MyFont.h3,
-                            fontWeight: FontWeight.bold,
                             fontFamily: "Nunito",
                           ),
                         ),
@@ -138,9 +145,9 @@ class _LandingPageState extends State<LandingPage> {
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Container(
                             height: 1.5,
-                            width: 60.0,
+                            width: 70.0,
                             color: _navbarindex == 2
-                                ? Mycolors.navitem
+                                ? Mycolors.primarytitle
                                 : Colors.transparent, //onclick highlighting
                           ),
                         )
@@ -154,7 +161,8 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding:
+                      const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
                   child: FlatButton(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -162,9 +170,10 @@ class _LandingPageState extends State<LandingPage> {
                         Text(
                           "Contact",
                           style: TextStyle(
-                            color: Mycolors.navitem,
+                            color: _navbarindex == 3
+                                ? Mycolors.primarytitle
+                                : Mycolors.dwhite,
                             fontSize: MyFont.h3,
-                            fontWeight: FontWeight.bold,
                             fontFamily: "Nunito",
                           ),
                         ),
@@ -174,7 +183,7 @@ class _LandingPageState extends State<LandingPage> {
                             height: 1.5,
                             width: 70.0,
                             color: _navbarindex == 3
-                                ? Mycolors.navitem
+                                ? Mycolors.primarytitle
                                 : Colors.transparent, //onclick highlighting
                           ),
                         )
@@ -201,129 +210,25 @@ class _LandingPageState extends State<LandingPage> {
                   SizedBox(
                     height: 30.0,
                   ),
-                  FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.home,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15.0),
-                            child: Text(
-                              "Home",
-                              style: TextStyle(
-                                color: Mycolors.navitem,
-                                fontSize: MyFont.h3,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        // setting index and closing drawer
-                        _navbarindex = 0;
-                        Navigator.of(context).pop();
-                      });
-                    },
+                  CustomNavbar(
+                    title: "Home",
+                    navicon: Icons.home,
+                    navindex: 0,
                   ),
-                  FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.add_shopping_cart_outlined,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15.0),
-                            child: Text(
-                              "Product",
-                              style: TextStyle(
-                                color: Mycolors.navitem,
-                                fontSize: MyFont.h3,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        // setting index and closing drawer
-                        _navbarindex = 1;
-                        Navigator.of(context).pop();
-                      });
-                    },
+                  CustomNavbar(
+                    title: "Products",
+                    navicon: Icons.add_shopping_cart_outlined,
+                    navindex: 1,
                   ),
-                  FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.question_answer,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15.0),
-                            child: Text(
-                              "FAQ",
-                              style: TextStyle(
-                                color: Mycolors.navitem,
-                                fontSize: MyFont.h3,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        // setting index and closing drawer
-                        _navbarindex = 2;
-                        Navigator.of(context).pop();
-                      });
-                    },
+                  CustomNavbar(
+                    title: "FAQ",
+                    navicon: Icons.question_answer,
+                    navindex: 2,
                   ),
-                  FlatButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.contacts,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15.0),
-                            child: Text(
-                              "Contact",
-                              style: TextStyle(
-                                color: Mycolors.navitem,
-                                fontSize: MyFont.h3,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "Nunito",
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        // setting index and closing drawer
-                        _navbarindex = 3;
-                        Navigator.of(context).pop();
-                      });
-                    },
+                  CustomNavbar(
+                    title: "Contact Us",
+                    navicon: Icons.contacts,
+                    navindex: 3,
                   ),
                 ],
               ),
@@ -344,17 +249,27 @@ class _LandingPageState extends State<LandingPage> {
                 child: Products(),
               ),
               Container(
-                height: MediaQuery.of(context).size.width > 700 ? 550.0 : 265.0,
-                width: MediaQuery.of(context).size.width,
-                color: Colors.pink[50],
-                child: Text("FAQ"),
+                color: Mycolors.primary,
+                child: faq(),
               ),
               Container(
-                height: MediaQuery.of(context).size.width > 700 ? 550.0 : 265.0,
-                width: MediaQuery.of(context).size.width,
-                color: Colors.yellow[50],
-                child: Text("About us"),
+                child: contact(),
               ),
+              Container(
+                color: Mycolors.primary,
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Center(
+                      child: Text(
+                    "Copyright ©2021 All rights reserved | This template is made with 🤍 by Nixbees",
+                    style: TextStyle(
+                        fontSize: MyFont.h4,
+                        fontFamily: "Sans",
+                        color: Mycolors.white),
+                    textAlign: TextAlign.center,
+                  )),
+                ),
+              )
             ],
           ),
         ),

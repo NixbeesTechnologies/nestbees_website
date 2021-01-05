@@ -7,7 +7,7 @@ class ImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Mycolors.imgbg),
+      decoration: BoxDecoration(color: Mycolors.primarybg),
       child: ListView(
         children: [
           SizedBox(

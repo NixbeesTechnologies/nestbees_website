@@ -19,31 +19,34 @@ class Products extends StatelessWidget {
                       ? MyFont.h1
                       : MyFont.h2,
                   fontFamily: "Ubuntu",
-                  color: Mycolors.header,
+                  color: Mycolors.primary,
                   fontWeight: FontWeight.bold),
             )),
           ),
-          Wrap(
-            children: [
-              ProductInfo(
-                title: "Nestbees-Beta ",
-                imgadd: "images/prod2.jpeg",
-                infop:
-                    "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
-              ),
-              ProductInfo(
-                title: "Nestbees-Alpha",
-                imgadd: "images/prod1.jpeg",
-                infop:
-                    "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
-              ),
-              ProductInfo(
-                title: "Nestbees-Beta ",
-                imgadd: "images/prod3.jpeg",
-                infop:
-                    "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(bottom: 40.0),
+            child: Wrap(
+              children: [
+                ProductInfo(
+                  title: "Nestbees-Beta ",
+                  imgadd: "images/prod2.jpeg",
+                  infop:
+                      "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
+                ),
+                ProductInfo(
+                  title: "Nestbees-Alpha",
+                  imgadd: "images/prod1.jpeg",
+                  infop:
+                      "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
+                ),
+                ProductInfo(
+                  title: "Nestbees-Beta ",
+                  imgadd: "images/prod3.jpeg",
+                  infop:
+                      "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -89,7 +92,7 @@ class _ProductInfoState extends State<ProductInfo> {
                   fontSize: MyFont.h2,
                   fontFamily: "Ubuntu",
                   fontWeight: FontWeight.bold,
-                  color: Mycolors.nav),
+                  color: Mycolors.primarytitle),
             ),
             Image(
               width: 200.0,
@@ -105,16 +108,17 @@ class _ProductInfoState extends State<ProductInfo> {
                 style: TextStyle(
                     fontSize: MyFont.h4,
                     fontFamily: "Sans",
-                    color: Mycolors.header),
+                    color: Mycolors.primary),
               ),
             ),
             FlatButton(
               minWidth: 150.0,
-              color: Mycolors.nav,
+              color: Mycolors.primarytitle,
               textColor: Mycolors.white,
               hoverColor: Mycolors.green,
               shape: new RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0)),
+                  borderRadius: new BorderRadius.circular(30.0),
+                  side: BorderSide(color: Mycolors.primary, width: 2)),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(

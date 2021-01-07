@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
-import 'package:flutterwebapp/design/images.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
+import 'package:flutterwebapp/resources/images.dart';
 
-class Products extends StatelessWidget {
+class ProductsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +20,7 @@ class Products extends StatelessWidget {
                       ? MyFont.h1
                       : MyFont.h2,
                   fontFamily: "Ubuntu",
-                  color: Mycolors.primary,
+                  color: MyColors.primary,
                   fontWeight: FontWeight.bold),
             )),
           ),
@@ -70,9 +70,9 @@ class _ProductInfoState extends State<ProductInfo> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Mycolors.white,
+        color: MyColors.white,
         border: Border.all(
-            color: Mycolors.t2, width: 2.0, style: BorderStyle.solid),
+            color: MyColors.t2, width: 2.0, style: BorderStyle.solid),
         borderRadius: BorderRadius.circular(10.0),
         boxShadow: [
           new BoxShadow(
@@ -93,7 +93,7 @@ class _ProductInfoState extends State<ProductInfo> {
                   fontSize: MyFont.h2,
                   fontFamily: "Ubuntu",
                   fontWeight: FontWeight.bold,
-                  color: Mycolors.primarytitle),
+                  color: MyColors.primarytitle),
             ),
             Image(
               width: 200.0,
@@ -107,26 +107,26 @@ class _ProductInfoState extends State<ProductInfo> {
               child: Text(
                 widget.infop,
                 style: TextStyle(
-                    fontSize: MyFont.h4,
+                    fontSize: MyFont.h5,
                     fontFamily: "Sans",
-                    color: Mycolors.primary),
+                    color: MyColors.primary),
               ),
             ),
             FlatButton(
               minWidth: 150.0,
-              color: Mycolors.primarytitle,
-              textColor: Mycolors.white,
-              hoverColor: Mycolors.green,
+              color: MyColors.primarytitle,
+              textColor: MyColors.white,
+              hoverColor: MyColors.green,
               shape: new RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(30.0),
-                  side: BorderSide(color: Mycolors.primary, width: 2)),
+                  side: BorderSide(color: MyColors.primary, width: 2)),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Buy now",
                   style: TextStyle(
                       fontSize: MyFont.h3,
-                      color: Mycolors.white,
+                      color: MyColors.white,
                       fontFamily: "Ubuntu"),
                 ),
               ),

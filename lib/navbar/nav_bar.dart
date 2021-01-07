@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
 
 class MinimizedNavbar extends StatefulWidget {
   final String title;
@@ -27,7 +27,7 @@ class _MinimizedNavbarState extends State<MinimizedNavbar> {
               child: Text(
                 widget.title,
                 style: TextStyle(
-                  color: Mycolors.primary,
+                  color: MyColors.primary,
                   fontSize: MyFont.h3,
                   fontWeight: FontWeight.bold,
                   fontFamily: "Nunito",
@@ -44,54 +44,6 @@ class _MinimizedNavbarState extends State<MinimizedNavbar> {
           Navigator.of(context).pop();
         });
       },
-    );
-  }
-}
-
-class NavBarMenuItem extends StatelessWidget {
-  final bool isSelected;
-  final String menuTitle;
-  final Function onSelected;
-  NavBarMenuItem({
-    this.isSelected,
-    this.menuTitle,
-    this.onSelected,
-  });
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
-      child: FlatButton(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              menuTitle,
-              style: TextStyle(
-                color: isSelected ? Mycolors.primarytitle : Mycolors.dwhite,
-                fontSize: MyFont.h3,
-                fontFamily: "Nunito",
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5.0),
-              child: Container(
-                height: 1.5,
-                width: 70.0,
-                color: isSelected
-                    ? Mycolors.primarytitle
-                    : Colors.transparent, //onclick highlighting
-              ),
-            )
-          ],
-        ),
-        hoverColor: Colors.transparent,
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        onPressed: () {
-          onSelected?.call();
-        },
-      ),
     );
   }
 }

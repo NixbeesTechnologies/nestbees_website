@@ -1,14 +1,14 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
-import 'package:flutterwebapp/design/images.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
+import 'package:flutterwebapp/resources/images.dart';
 
 class ImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Mycolors.primarybg),
+      decoration: BoxDecoration(color: MyColors.primarybg),
       child: ListView(
         children: [
           SizedBox(
@@ -43,7 +43,7 @@ class ImageSlider extends StatelessWidget {
                                   : MyFont.h1,
                               fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Mycolors.white),
+                              color: MyColors.white),
                         ),
                       )
                     ],
@@ -67,7 +67,7 @@ class ImageSlider extends StatelessWidget {
                                   : MyFont.h1,
                               fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Mycolors.t2),
+                              color: MyColors.t2),
                         ),
                       )
                     ],
@@ -91,7 +91,7 @@ class ImageSlider extends StatelessWidget {
                                   : MyFont.h1,
                               fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Mycolors.white),
+                              color: MyColors.white),
                         ),
                       )
                     ],
@@ -115,7 +115,7 @@ class ImageSlider extends StatelessWidget {
                                   : MyFont.h1,
                               fontFamily: "Ubuntu",
                               fontWeight: FontWeight.bold,
-                              color: Mycolors.t2),
+                              color: MyColors.t2),
                         ),
                       )
                     ],

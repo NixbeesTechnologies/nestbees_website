@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: camel_case_types
@@ -23,7 +23,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
               ),
               Container(
                   margin: EdgeInsets.only(left: 100.0),
@@ -33,7 +33,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
               ),
               box_design(
                 title: "Ask Query",
@@ -41,7 +41,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
               ),
               Container(
                   margin: EdgeInsets.only(left: 100.0),
@@ -51,7 +51,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
               ),
               box_design(
                 title: "Find Answer",
@@ -59,7 +59,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
               ),
               Container(
                   margin: EdgeInsets.only(left: 100.0),
@@ -112,18 +112,18 @@ class boxes extends StatelessWidget {
             children: [
               Icon(
                 Icons.announcement_outlined,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
                 size: 100.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: RaisedButton(
-                  color: Mycolors.primarytitle,
-                  hoverColor: Mycolors.primary,
-                  textColor: Mycolors.white,
+                  color: MyColors.primarytitle,
+                  hoverColor: MyColors.primary,
+                  textColor: MyColors.white,
                   shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(30.0),
-                      side: BorderSide(color: Mycolors.white, width: 1)),
+                      side: BorderSide(color: MyColors.white, width: 1)),
                   onPressed: _launchURL,
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
@@ -164,7 +164,7 @@ class _que_ansState extends State<que_ans> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Mycolors.white,
+      shadowColor: MyColors.white,
       child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Center(
@@ -177,7 +177,7 @@ class _que_ansState extends State<que_ans> {
                       child: Icon(
                         Icons.contact_support,
                         size: 25.0,
-                        color: Mycolors.primary,
+                        color: MyColors.primary,
                       ),
                     ),
                     Text(
@@ -185,7 +185,7 @@ class _que_ansState extends State<que_ans> {
                       style: TextStyle(
                         fontSize: MyFont.h3,
                         fontFamily: "Sans",
-                        color: Mycolors.primary,
+                        color: MyColors.primary,
                       ),
                     ),
                   ],
@@ -197,7 +197,7 @@ class _que_ansState extends State<que_ans> {
                       child: Icon(
                         Icons.chevron_right_outlined,
                         size: 25.0,
-                        color: Mycolors.primary,
+                        color: MyColors.primary,
                       ),
                     ),
                     Text(
@@ -205,7 +205,7 @@ class _que_ansState extends State<que_ans> {
                       style: TextStyle(
                         fontSize: MyFont.h3,
                         fontFamily: "Sans",
-                        color: Mycolors.primary,
+                        color: MyColors.primary,
                       ),
                     )
                   ],
@@ -232,12 +232,12 @@ class _box_designState extends State<box_design> {
     return FlatButton(
       onPressed: () {},
       minWidth: 150.0,
-      color: Mycolors.primarytitle,
-      textColor: Mycolors.white,
-      hoverColor: Mycolors.primary,
+      color: MyColors.primarytitle,
+      textColor: MyColors.white,
+      hoverColor: MyColors.primary,
       shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(30.0),
-          side: BorderSide(color: Mycolors.white, width: 1)),
+          side: BorderSide(color: MyColors.white, width: 1)),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Text(

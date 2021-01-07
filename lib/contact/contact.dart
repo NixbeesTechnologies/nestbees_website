@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
 
-class contact extends StatelessWidget {
+class ContactWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +18,7 @@ class contact extends StatelessWidget {
                       ? MyFont.h1
                       : MyFont.h2,
                   fontFamily: "Ubuntu",
-                  color: Mycolors.primary,
+                  color: MyColors.primary,
                   fontWeight: FontWeight.bold),
             ),
           ),
@@ -33,7 +33,7 @@ class contact extends StatelessWidget {
                   style: TextStyle(
                       fontSize: MyFont.h3,
                       fontFamily: "Ubuntu",
-                      color: Mycolors.dgrey),
+                      color: MyColors.dgrey),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -92,16 +92,16 @@ class _contactInfoState extends State<contactInfo> {
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  border: Border.all(width: 2, color: Mycolors.primarytitle)),
+                  border: Border.all(width: 2, color: MyColors.primarytitle)),
               child: Icon(
                 widget.icon,
-                color: Mycolors.primarytitle,
+                color: MyColors.primarytitle,
                 size: MyFont.h2,
               ),
             ),
             Text(widget.title,
                 style: TextStyle(
-                    color: Mycolors.primary,
+                    color: MyColors.primary,
                     fontSize: MyFont.h2,
                     fontWeight: FontWeight.bold,
                     fontFamily: "Ubuntu")),
@@ -110,7 +110,7 @@ class _contactInfoState extends State<contactInfo> {
               child: Text(
                 widget.info,
                 style: TextStyle(
-                    color: Mycolors.dgrey,
+                    color: MyColors.dgrey,
                     fontSize: MyFont.h3,
                     fontFamily: "Sans"),
                 textAlign: TextAlign.center,

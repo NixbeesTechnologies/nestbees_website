@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwebapp/design/colors.dart';
-import 'package:flutterwebapp/design/fontsize.dart';
 import 'package:flutterwebapp/faq/boxes.dart';
+import 'package:flutterwebapp/resources/colors.dart';
+import 'package:flutterwebapp/resources/fontsize.dart';
 
 // ignore: camel_case_types
-class faq extends StatelessWidget {
+class FaqWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +20,7 @@ class faq extends StatelessWidget {
                       ? MyFont.h1
                       : MyFont.h2,
                   fontFamily: "Ubuntu",
-                  color: Mycolors.white,
+                  color: MyColors.white,
                   fontWeight: FontWeight.bold),
             )),
           ),
@@ -31,7 +31,7 @@ class faq extends StatelessWidget {
               "We have got you covered",
               style: TextStyle(
                 fontSize: MyFont.h3,
-                color: Mycolors.dwhite,
+                color: MyColors.dwhite,
                 fontFamily: "Ubuntu",
               ),
             ),

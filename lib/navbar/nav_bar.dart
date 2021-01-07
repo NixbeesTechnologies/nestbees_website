@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutterwebapp/design/colors.dart';
 import 'package:flutterwebapp/design/fontsize.dart';
 
-class CustomNavbar extends StatefulWidget {
+class MinimizedNavbar extends StatefulWidget {
   final String title;
   int navindex;
   var navicon;
-  CustomNavbar({this.title, this.navicon, this.navindex});
+  MinimizedNavbar({this.title, this.navicon, this.navindex});
 
   @override
-  _CustomNavbarState createState() => _CustomNavbarState();
+  _MinimizedNavbarState createState() => _MinimizedNavbarState();
 }
 
-class _CustomNavbarState extends State<CustomNavbar> {
+class _MinimizedNavbarState extends State<MinimizedNavbar> {
   int navbarindex = 0;
   @override
   Widget build(BuildContext context) {
@@ -48,30 +48,27 @@ class _CustomNavbarState extends State<CustomNavbar> {
   }
 }
 
-class NavBar extends StatefulWidget {
-  final String title;
-  int navindex;
-  NavBar({this.title, this.navindex});
-  @override
-  _NavBarState createState() => _NavBarState();
-}
-
-class _NavBarState extends State<NavBar> {
-  int _navbarindex = 0;
+class NavBarMenuItem extends StatelessWidget {
+  final bool isSelected;
+  final String menuTitle;
+  final Function onSelected;
+  NavBarMenuItem({
+    this.isSelected,
+    this.menuTitle,
+    this.onSelected,
+  });
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
+      padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
       child: FlatButton(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              widget.title,
+              menuTitle,
               style: TextStyle(
-                color: _navbarindex == widget.navindex
-                    ? Mycolors.primarytitle
-                    : Mycolors.dwhite,
+                color: isSelected ? Mycolors.primarytitle : Mycolors.dwhite,
                 fontSize: MyFont.h3,
                 fontFamily: "Nunito",
               ),
@@ -81,17 +78,18 @@ class _NavBarState extends State<NavBar> {
               child: Container(
                 height: 1.5,
                 width: 70.0,
-                color: _navbarindex == widget.navindex
+                color: isSelected
                     ? Mycolors.primarytitle
                     : Colors.transparent, //onclick highlighting
               ),
             )
           ],
         ),
+        hoverColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         onPressed: () {
-          setState(() {
-            _navbarindex = widget.navindex;
-          });
+          onSelected?.call();
         },
       ),
     );

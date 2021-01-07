@@ -2,6 +2,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwebapp/design/colors.dart';
 import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/design/images.dart';
 
 class ImageSlider extends StatelessWidget {
   @override
@@ -25,7 +26,7 @@ class ImageSlider extends StatelessWidget {
                 images: [
                   Stack(
                     children: [
-                      Image.asset("image/1.jpeg",
+                      Image.asset(MyImage.img1,
                           width: double.infinity,
                           fit: BoxFit.cover,
                           color: Color.fromRGBO(255, 255, 255, 0.6),
@@ -49,7 +50,7 @@ class ImageSlider extends StatelessWidget {
                   ),
                   Stack(
                     children: [
-                      Image.asset("image/22.png",
+                      Image.asset(MyImage.img2,
                           width: double.infinity,
                           fit: BoxFit.cover,
                           color: Color.fromRGBO(255, 255, 255, 0.6),
@@ -73,7 +74,7 @@ class ImageSlider extends StatelessWidget {
                   ), //5
                   Stack(
                     children: [
-                      Image.asset("image/3.jpg",
+                      Image.asset(MyImage.img3,
                           width: double.infinity,
                           fit: BoxFit.cover,
                           color: Color.fromRGBO(255, 255, 255, 0.6),
@@ -97,7 +98,7 @@ class ImageSlider extends StatelessWidget {
                   ), //7
                   Stack(
                     children: [
-                      Image.asset("image/4.jpg",
+                      Image.asset(MyImage.img4,
                           width: double.infinity,
                           fit: BoxFit.cover,
                           color: Color.fromRGBO(255, 255, 255, 0.6),

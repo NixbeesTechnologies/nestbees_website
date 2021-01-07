@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwebapp/design/colors.dart';
 import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/design/images.dart';
 
 class Products extends StatelessWidget {
   @override
@@ -29,19 +30,19 @@ class Products extends StatelessWidget {
               children: [
                 ProductInfo(
                   title: "Nestbees-Beta ",
-                  imgadd: "images/prod2.jpeg",
+                  imgadd: MyImage.prod1,
                   infop:
                       "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
                 ),
                 ProductInfo(
                   title: "Nestbees-Alpha",
-                  imgadd: "images/prod1.jpeg",
+                  imgadd: MyImage.prod2,
                   infop:
                       "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
                 ),
                 ProductInfo(
                   title: "Nestbees-Beta ",
-                  imgadd: "images/prod3.jpeg",
+                  imgadd: MyImage.prod3,
                   infop:
                       "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
                 ),

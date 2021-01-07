@@ -4,6 +4,7 @@ import 'package:flutterwebapp/carousel/ImageSlider.dart';
 import 'package:flutterwebapp/contact/contact.dart';
 import 'package:flutterwebapp/design/colors.dart';
 import 'package:flutterwebapp/design/fontsize.dart';
+import 'package:flutterwebapp/design/images.dart';
 import 'package:flutterwebapp/faq/faq.dart';
 import 'NavBar/nav_bar.dart';
 
@@ -43,7 +44,7 @@ class _LandingPageState extends State<LandingPage> {
         leading: Padding(
           padding: const EdgeInsets.only(left: 10.0),
           child: Image.asset(
-            "images/logo.jpeg",
+            MyImage.logo,
             width: 7.0,
             height: 7.0,
           ),

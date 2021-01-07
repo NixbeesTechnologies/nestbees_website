@@ -24,62 +24,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _navBarIndex = 0;
-  AppBar buildAppBar() {
-    return AppBar(
-        title: Text(
-          "Nestbees",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: MyColors.greyDark,
-            fontSize: MyFont.h3,
-          ),
-        ),
-        backgroundColor: MyColors.neuBackground,
-        elevation: 0,
-        actions: (MediaQuery.of(context).size.width > 700)
-            ? [
-                NavBarMenuItem(
-                  menuTitle: 'Home',
-                  isSelected: _navBarIndex == 0,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 0;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'Products',
-                  isSelected: _navBarIndex == 1,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 1;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'FAQ',
-                  isSelected: _navBarIndex == 2,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 2;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'Contact',
-                  isSelected: _navBarIndex == 3,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 3;
-                    });
-                  },
-                ),
-              ]
-            : []);
-  }
-
-  var top = 0.0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,44 +69,47 @@ class _HomePageState extends State<HomePage> {
               elevation: 0,
               floating: false,
               pinned: true,
-              actions: [
-                NavBarMenuItem(
-                  menuTitle: 'Home',
-                  isSelected: _navBarIndex == 0,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 0;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'Products',
-                  isSelected: _navBarIndex == 1,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 1;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'FAQ',
-                  isSelected: _navBarIndex == 2,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 2;
-                    });
-                  },
-                ),
-                NavBarMenuItem(
-                  menuTitle: 'Contact',
-                  isSelected: _navBarIndex == 3,
-                  onSelected: () {
-                    setState(() {
-                      _navBarIndex = 3;
-                    });
-                  },
-                ),
-              ],
+              centerTitle: false,
+              actions: (MediaQuery.of(context).size.width > 700)
+                  ? [
+                      NavBarMenuItem(
+                        menuTitle: 'Home',
+                        isSelected: _navBarIndex == 0,
+                        onSelected: () {
+                          setState(() {
+                            _navBarIndex = 0;
+                          });
+                        },
+                      ),
+                      NavBarMenuItem(
+                        menuTitle: 'Products',
+                        isSelected: _navBarIndex == 1,
+                        onSelected: () {
+                          setState(() {
+                            _navBarIndex = 1;
+                          });
+                        },
+                      ),
+                      NavBarMenuItem(
+                        menuTitle: 'FAQ',
+                        isSelected: _navBarIndex == 2,
+                        onSelected: () {
+                          setState(() {
+                            _navBarIndex = 2;
+                          });
+                        },
+                      ),
+                      NavBarMenuItem(
+                        menuTitle: 'Contact',
+                        isSelected: _navBarIndex == 3,
+                        onSelected: () {
+                          setState(() {
+                            _navBarIndex = 3;
+                          });
+                        },
+                      ),
+                    ]
+                  : [],
               title: Text(
                 'Nestbees',
                 style: TextStyle(
@@ -178,7 +125,8 @@ class _HomePageState extends State<HomePage> {
                       ImageWidget(
                         ImageModel(
                           imageLocation: MyImage.smartHome1,
-                          boxFit: BoxFit.contain,
+                          boxFit: BoxFit.cover,
+                          height: MediaQuery.of(context).size.height,
                         ),
                       ),
                       Center(

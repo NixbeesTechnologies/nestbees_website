@@ -7,41 +7,36 @@ import 'package:flutterwebapp/resources/fontsize.dart';
 class FaqWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 20.0, bottom: 5.0),
-            child: Center(
-                child: Text(
-              "FAQ! Need Help",
-              style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width > 700
-                      ? MyFont.h1
-                      : MyFont.h2,
-                  fontFamily: "Ubuntu",
-                  color: MyColors.white,
-                  fontWeight: FontWeight.bold),
-            )),
-          ),
-          Container(
-            margin: EdgeInsets.only(
-                bottom: MediaQuery.of(context).size.width > 700 ? 50 : 0),
-            child: Text(
-              "We have got you covered",
-              style: TextStyle(
-                fontSize: MyFont.h3,
-                color: MyColors.dwhite,
+    return Column(
+      children: [
+        Container(
+          child: Center(
+              child: Text(
+            "FAQ! Need Help",
+            style: TextStyle(
+                fontSize: MediaQuery.of(context).size.width > 700
+                    ? MyFont.h1
+                    : MyFont.h2,
                 fontFamily: "Ubuntu",
-              ),
+                color: MyColors.white,
+                fontWeight: FontWeight.bold),
+          )),
+        ),
+        Container(
+          child: Text(
+            "We have got you covered",
+            style: TextStyle(
+              fontSize: MyFont.h3,
+              color: MyColors.dwhite,
+              fontFamily: "Ubuntu",
             ),
           ),
-          boxes(),
-          SizedBox(
-            height: MediaQuery.of(context).size.width > 700 ? 100.0 : 0,
-          )
-        ],
-      ),
+        ),
+        boxes(),
+        SizedBox(
+          height: MediaQuery.of(context).size.width > 700 ? 100.0 : 0,
+        )
+      ],
     );
   }
 }

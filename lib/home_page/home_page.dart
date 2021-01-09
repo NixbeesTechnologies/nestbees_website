@@ -2,6 +2,7 @@
  * @Author GS
  */
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterwebapp/common/image_widget.dart';
 import 'package:flutterwebapp/contact/contact.dart';
@@ -125,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                       ImageWidget(
                         ImageModel(
                           imageLocation: MyImage.smartHome1,
-                          boxFit: BoxFit.cover,
+                          boxFit: BoxFit.fitWidth,
                           height: MediaQuery.of(context).size.height,
                         ),
                       ),
@@ -134,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Text(
-                              'More',
+                              'Products',
                               style: TextStyle(
                                 color: MyColors.greyDark,
                               ),
@@ -163,10 +164,13 @@ class _HomePageState extends State<HomePage> {
                 //   child: ImageSlider(),
                 // ),
                 Container(
+                  color: MyColors.neuBackgroundDark,
+                  padding: EdgeInsets.symmetric(vertical: 64),
                   child: ProductsWidget(),
                 ),
                 Container(
                   color: MyColors.primary,
+                  // height: MediaQuery.of(context).size.height,
                   child: FaqWidget(),
                 ),
                 Container(

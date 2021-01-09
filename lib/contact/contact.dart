@@ -14,12 +14,12 @@ class ContactWidget extends StatelessWidget {
             child: Text(
               "Let's Connect",
               style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width > 700
-                      ? MyFont.h1
-                      : MyFont.h2,
-                  fontFamily: "Ubuntu",
-                  color: MyColors.primary,
-                  fontWeight: FontWeight.bold),
+                fontSize: MediaQuery.of(context).size.width > 700
+                    ? MyFont.smallTitle
+                    : MyFont.h2,
+                color: MyColors.greyDark,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           Padding(
@@ -31,9 +31,9 @@ class ContactWidget extends StatelessWidget {
                 child: Text(
                   "We'd love to help you to get started with your smart home",
                   style: TextStyle(
-                      fontSize: MyFont.h3,
-                      fontFamily: "Ubuntu",
-                      color: MyColors.dgrey),
+                    fontSize: MyFont.h3,
+                    color: MyColors.greyText,
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),

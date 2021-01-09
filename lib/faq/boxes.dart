@@ -23,7 +23,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: MyColors.primarytitle,
+                color: MyColors.greyLighter,
               ),
               Container(
                   margin: EdgeInsets.only(left: 100.0),
@@ -33,7 +33,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: MyColors.primarytitle,
+                color: MyColors.greyLighter,
               ),
               box_design(
                 title: "Ask Query",
@@ -41,7 +41,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: MyColors.primarytitle,
+                color: MyColors.greyLighter,
               ),
               Container(
                   margin: EdgeInsets.only(left: 100.0),
@@ -51,7 +51,7 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: MyColors.primarytitle,
+                color: MyColors.greyLighter,
               ),
               box_design(
                 title: "Find Answer",
@@ -59,13 +59,14 @@ class boxes extends StatelessWidget {
               Container(
                 width: 10.0,
                 height: 30.0,
-                color: MyColors.primarytitle,
+                color: MyColors.greyLighter,
               ),
               Container(
-                  margin: EdgeInsets.only(left: 100.0),
-                  child: box_design(
-                    title: "Feedback",
-                  )),
+                margin: EdgeInsets.only(left: 100.0),
+                child: box_design(
+                  title: "Feedback",
+                ),
+              ),
             ],
           ),
         ),
@@ -122,11 +123,12 @@ class boxes extends StatelessWidget {
                   hoverColor: MyColors.primary,
                   textColor: MyColors.white,
                   shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
-                      side: BorderSide(color: MyColors.white, width: 1)),
+                    borderRadius: new BorderRadius.circular(30.0),
+                  ),
                   onPressed: _launchURL,
                   child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Text(
                       "New Query",
                       style: TextStyle(
@@ -232,18 +234,18 @@ class _box_designState extends State<box_design> {
     return FlatButton(
       onPressed: () {},
       minWidth: 150.0,
-      color: MyColors.primarytitle,
+      color: MyColors.primaryColor,
       textColor: MyColors.white,
       hoverColor: MyColors.primary,
       shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(30.0),
-          side: BorderSide(color: MyColors.white, width: 1)),
+        borderRadius: new BorderRadius.circular(30.0),
+      ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         child: Text(
           widget.title,
           style: TextStyle(
-            fontSize: MyFont.h3,
+            fontSize: MyFont.h4,
           ),
         ),
       ),

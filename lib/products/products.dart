@@ -10,49 +10,47 @@ import 'package:flutterwebapp/resources/images.dart';
 class ProductsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 32),
-            child: Center(
-                child: Text(
-              "Our Products and Services",
-              style: TextStyle(
-                fontSize: MediaQuery.of(context).size.width > 700
-                    ? MyFont.smallTitle
-                    : MyFont.h2,
-                color: MyColors.greyDark,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
-          ),
-          SizedWidget.h30,
-          Container(
-            width: double.infinity,
-            child: Wrap(
-              runAlignment: WrapAlignment.spaceEvenly,
-              alignment: WrapAlignment.spaceEvenly,
-              runSpacing: 64,
-              children: [
-                ProductInfo(
-                  title: "Nestbees-Beta ",
-                  imgadd: MyImage.prod1,
-                  infop:
-                      "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
-                ),
-                ProductInfo(
-                  title: "Nestbees-Alpha",
-                  imgadd: MyImage.prod2,
-                  infop:
-                      "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
-                ),
-              ],
+    return Column(
+      children: [
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 32),
+          child: Center(
+              child: Text(
+            "Our Products and Services",
+            style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width > 700
+                  ? MyFont.smallTitle
+                  : MyFont.h2,
+              color: MyColors.greyDark,
+              fontWeight: FontWeight.bold,
             ),
+          )),
+        ),
+        SizedWidget.h30,
+        Container(
+          width: double.infinity,
+          child: Wrap(
+            runAlignment: WrapAlignment.spaceEvenly,
+            alignment: WrapAlignment.spaceEvenly,
+            runSpacing: 64,
+            children: [
+              ProductInfo(
+                title: "Nestbees-Beta ",
+                imgadd: MyImage.prod1,
+                infop:
+                    "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
+              ),
+              ProductInfo(
+                title: "Nestbees-Alpha",
+                imgadd: MyImage.prod2,
+                infop:
+                    "Model Number: Nixbees-Alpha\nOperating Temperature : -20 to 70 C\nMax.Current : 12Amps\n4 wy Switches\nSupported:Android and iOS",
+              ),
+            ],
           ),
-          SizedWidget.h60,
-        ],
-      ),
+        ),
+        // SizedWidget.h60,
+      ],
     );
   }
 }

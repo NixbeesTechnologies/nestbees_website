@@ -5,6 +5,9 @@ import 'package:responsive_framework/responsive_framework.dart';
 void main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: 'ubuntu',
+        ),
         title: 'Nestbees- Switch to smart Switch',
         builder: (context, widget) => ResponsiveWrapper.builder(
           BouncingScrollWrapper.builder(context, widget),

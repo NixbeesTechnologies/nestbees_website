@@ -12,6 +12,7 @@ class SizedWidget {
   static SizedBox get h18 => SizedBox(height: 18);
   static SizedBox get h24 => SizedBox(height: 24);
   static SizedBox get h30 => SizedBox(height: 30);
+  static SizedBox get h40 => SizedBox(height: 40);
   static SizedBox get h60 => SizedBox(height: 60);
   static SizedBox get h100 => SizedBox(height: 100);
 

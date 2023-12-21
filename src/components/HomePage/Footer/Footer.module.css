@@ -1,0 +1,478 @@
+.root {
+  position: absolute;
+  left: 0;
+  top: 4413.0801px;
+  width: 1920px;
+  height: 408.33px;
+  align-items: flex-start;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 11.2384%;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.divQodefGridItem {
+  position: absolute;
+  left: 295px;
+  right: 1292.5px;
+  top: 82px;
+  height: 181.66px;
+  align-items: flex-start;
+}
+.divQodefMLine {
+  position: absolute;
+  left: 15px;
+  top: 37.89px;
+  width: 1px;
+  max-width: 100%;
+  height: 1px;
+  max-height: 100%;
+  border-right: solid NaNpx #fff;
+  margin-right: NaNpx;
+}
+.welcomeToAPlaceOfRefinementAnd {
+  position: absolute;
+  left: 15px;
+  top: 51.89px;
+  width: 248.8633px;
+  height: 67.78px;
+  justify-content: center;
+  flex-direction: column;
+}
+.textBlock {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock2 {
+  margin-top: 0;
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock3 {
+  margin-top: 0;
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.divQodefMLine2 {
+  position: absolute;
+  left: 15px;
+  top: 150.56px;
+  width: 1px;
+  max-width: 100%;
+  height: 1px;
+  max-height: 100%;
+  border-right: solid NaNpx #fff;
+  margin-right: NaNpx;
+}
+.linkHeading6FB {
+  color: #000001;
+  font-size: 14px;
+  line-height: 30.1px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 15px;
+  top: 158.56px;
+  width: 22.5828px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkHeading6TW {
+  color: #000001;
+  font-size: 14px;
+  line-height: 30.1px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 47.55px;
+  top: 158.56px;
+  width: 26.1852px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkHeading6IN {
+  color: #000001;
+  font-size: 14px;
+  line-height: 30.1px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 83.67px;
+  top: 158.56px;
+  width: 19.8961px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkHeading6BE {
+  color: #000001;
+  font-size: 14px;
+  line-height: 30.1px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 113.55px;
+  top: 158.56px;
+  width: 22.8042px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+}
+.linkHeading6DR {
+  color: #000001;
+  font-size: 14px;
+  line-height: 30.1px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 146.31px;
+  top: 158.56px;
+  width: 23.9312px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+}
+.image1 {
+  position: absolute;
+  left: 7px;
+  top: -6.0801px;
+  width: 118px;
+  height: 43px;
+  background-image:/* webpackIgnore: true */ url('/assets/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divQodefGridItem2 {
+  position: absolute;
+  left: 627.5px;
+  right: 960px;
+  top: 82px;
+  height: 206.44px;
+  align-items: flex-start;
+}
+.heading5Studio {
+  color: #000001;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 52.2189px;
+  height: 21px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkVisitOurStore {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 44.98px;
+  width: 92.3422px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkAboutUs {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 77.87px;
+  width: 60.6352px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkOurBlog {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 110.76px;
+  width: 56.7531px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkCraftsmanship {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 143.65px;
+  width: 97.33px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkApplyForAJob {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 176.55px;
+  width: 102.5281px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divQodefGridItem3 {
+  position: absolute;
+  left: 960px;
+  right: 627.5px;
+  top: 82px;
+  height: 206.44px;
+  align-items: flex-start;
+}
+.heading5Shopping {
+  color: #000001;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 76.5075px;
+  height: 21px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkOnlinePayments {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 44.98px;
+  width: 111.0313px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkGiftCards {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 77.87px;
+  width: 65.971px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkReturnPolicy {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 110.76px;
+  width: 86.7234px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkFurnitureAssemblin {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 143.65px;
+  width: 140.0384px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.listItemLinkShippingMethods {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 176.55px;
+  width: 119.1841px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divQodefGridItem4 {
+  position: absolute;
+  left: 1292.5px;
+  right: 295px;
+  top: 82px;
+  height: 158.33px;
+  align-items: flex-start;
+}
+.heading5PaymentMethods {
+  color: #000001;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 146.9838px;
+  height: 21px;
+  justify-content: center;
+  flex-direction: column;
+}
+.selectOneOfManySupportedPaymen {
+  position: absolute;
+  left: 15px;
+  top: 44.98px;
+  width: 258.0305px;
+  height: 42.89px;
+  justify-content: center;
+  flex-direction: column;
+}
+.textBlock4 {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock5 {
+  margin-top: 0;
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.divQodefMLine3 {
+  position: absolute;
+  left: 15px;
+  top: 133.76px;
+  width: 1px;
+  max-width: 100%;
+  height: 1px;
+  max-height: 100%;
+  border-right: solid NaNpx #fff;
+  margin-right: NaNpx;
+}
+.footerLogoGroupPng {
+  position: absolute;
+  left: 15px;
+  top: 134.76px;
+  width: 289px;
+  height: 23.56px;
+  background-image:/* webpackIgnore: true */ url('/assets/footerLogoGroupPng.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.footer2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 88.7615%;
+  bottom: 0%;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.divQodefPageFooterBottomAreaIn {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1300px;
+  height: 45.89px;
+  align-items: flex-start;
+  box-shadow: inset 0px 1px 0px #000;
+  transform: translateX(-50%);
+}
+._2021NixbeesTechnologiesAllRigh {
+  color: #000001;
+  font-size: 15px;
+  line-height: 24.9px;
+  font-weight: 300;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 16.48px;
+  width: 398px;
+  height: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
